@@ -1,7 +1,6 @@
 print("Üdvözlünk a mozi szék foglaló programban!")
 print("Választhatsz egy sor székből a moziteremben!")
 székek = [1, 2, 3, 4, 6, 7, 8]
-
 def Valami():
     Valasztas = int(input("Melyik széket választod?[1-8]:"))
     if 1 < Valasztas > 8:
@@ -17,17 +16,13 @@ def Valami():
             Valami()
         if Veglegesites == "Y":
             print(f"Köszonjük a vásárlásrt! Az ön széke a/az: {Valasztas}.")
-        
             szabad = [1,2,3,4,5,6,7,8]
             Valasztas-1
             szabad.remove(Valasztas)
             szabad.append("📗")
             for i in range (1):
                 print(szabad)
-
     if 1 < Valasztas > 8:
         print("Ez nem opció")
         Valami()
 Valami()
-
-
